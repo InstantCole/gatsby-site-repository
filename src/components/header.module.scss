@@ -1,3 +1,7 @@
+$link-color: red;
+$link-hover: blue;
+$active-nav: green;
+
 .header {
     padding: 1rem 0 3rem;
 }
@@ -14,8 +18,17 @@
 }
 
 .nav-item {
-    color: grey;
+    color: $link-color;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
+}
+
+.nav-item:hover {
+    color: $link-hover;
+
+}
+
+.active-nav-item {
+    color: $active-nav;
 }

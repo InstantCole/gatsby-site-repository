@@ -18,16 +18,16 @@ const Header = ({ siteTitle }) => (
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <Link className={headerStyles.navItem} to="/">Home</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="/">Page 2</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-2/">Page 2</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="/">Page 3</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-3/">Page 3</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="/">Page 4</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-4/">Page 4</Link>
           </li>
         </ul>
         
