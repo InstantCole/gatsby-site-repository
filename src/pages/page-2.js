@@ -27,8 +27,17 @@ return (
     <p>Welcome to page 2</p>
     {console.log(data.allImageSharp.edges[1])}
     <div style={{ maxWidth: `50px`, marginBottom: `1.45rem` }}>
-    <Img fluid={data.allImageSharp.edges[0].node.fluid}/>
-    <Img fluid={data.allImageSharp.edges[1].node.fluid}/>
+      {data.allImageSharp.edges.map((edge) => {
+        return (
+        <Img fluid={edge.node.fluid}/>
+        )
+        
+
+      })}
+      
+
+      
+
     </div>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
