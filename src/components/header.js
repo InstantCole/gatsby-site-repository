@@ -1,10 +1,26 @@
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 import headerStyles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
+
+  const data = useStaticQuery(graphql`
+  query{
+    allMarkdownRemark{
+      edges{
+        node{
+          fields{
+            slug
+          }
+        }
+      }
+    }
+  }
+  `)
+
+  return (
   <header className={headerStyles.header}>
     
       <h1>
@@ -29,12 +45,27 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-4/">Page 4</Link>
           </li>
+          {data.allMarkdownRemark.edges.map((edge) => {
+            return(
+              <li>
+                <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to= {`/teams/${edge.node.fields.slug}`}>{edge.node.fields.slug}</Link>
+
+              </li>
+            )
+          })}
+
+          
+            
         </ul>
         
       </nav>
     
   </header>
-)
+  )
+}
+
+
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
