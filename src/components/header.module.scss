@@ -1,6 +1,4 @@
-$link-color: red;
-$link-hover: blue;
-$active-nav: green;
+@use '../utilities/colors';
 
 .header {
     padding: 1rem 0 3rem;
@@ -18,17 +16,17 @@ $active-nav: green;
 }
 
 .nav-item {
-    color: $link-color;
+    color: colors.$link-color;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
 
 .nav-item:hover {
-    color: $link-hover;
+    color: colors.$link-hover;
 
 }
 
 .active-nav-item {
-    color: $active-nav;
+    color: colors.$active-nav;
 }

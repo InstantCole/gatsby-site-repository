@@ -1,0 +1,34 @@
+.vid-wrapper{
+    position: relative;
+    padding-top: 56.25%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.vid-player{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.tab-container {
+    position: relative;
+    
+    width: 100%;
+    float: left;
+    background-color: chartreuse;
+}
+
+.tab-on{
+    width: 10px;
+    padding: 0 15px;
+    background-color: chocolate;
+}
+    
+
+
+
+

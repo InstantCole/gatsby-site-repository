@@ -1,0 +1,586 @@
+$Speed: 5s;
+$tabWidth: 100%;
+$tabHeight: 8px;
+$tabMargin: auto;
+$tabOpacity: .3;
+$tabOffColor: #525252;
+$fillMode: none;
+$delay: 2s;
+$direction: alternate;
+$iteration: 25;
+$timing: cubic-bezier(0.075, 0.82, 0.165, 1);
+$tabOnHeight: 16px;
+$tabOffheight: 8px;
+$eachTabHeight: 0px;
+$eachTabTopPadding: 30px;
+
+
+
+.tab-container {
+    position: relative;
+    display: block;
+    box-sizing: unset;
+    border: grey;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px 0;
+}
+
+.each-tab{
+    position: relative;
+    display: inline-block;
+    height: $eachTabHeight;
+    width: 20%;
+    padding-top: $eachTabTopPadding;
+    margin: auto 8px;
+    text-align: center;
+}
+
+.each-tab-off{
+    position: relative;
+    display: inline-block;
+    height: $eachTabHeight;
+    width: 20%;
+    opacity: 20%;
+    padding-top: $eachTabTopPadding;
+    margin: auto 8px;
+    text-align: center;
+}
+
+.tab-number{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 8px;
+    background-color: red;
+    margin: auto 8px;
+    opacity: .3;
+   }
+
+@keyframes onFirstTab {
+    6% {
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    13%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    13%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    21%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+
+@keyframes onSecondTab {   
+    13%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    21%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    21%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    28%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+
+@keyframes onThirdTab {   
+    21%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    28%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    28%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    35%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+
+@keyframes onForthTab {   
+    28%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    35%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    35%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    42%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+
+@keyframes onFifthTab {   
+    35%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    42%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    42%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    49%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+
+@keyframes onSixthTab {   
+    42%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    49%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    49%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    56%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onSeventhTab {   
+    49%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    56%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    56%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    63%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onEigthTab {   
+    56%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    63%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    63%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    70%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onNinthTab {   
+    63%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    70%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    70%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    77%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onTenthTab {   
+    70%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    77%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    77%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    84%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onEleventhTab {   
+    77%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    84%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    84%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    91%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+@keyframes onTwelthTab {   
+    84%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+    91%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    91%{
+        height: $tabOnHeight;
+        opacity: 1;
+        background-color: chocolate;
+    }
+    98%{
+        height: $tabOffheight;
+        opacity: .3;
+        background-color: #525252;
+    }
+}
+.tab-blank{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    background-color:$tabOffColor;
+   }
+
+.tab-first{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onFirstTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   
+   }
+
+   .tab-second{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onSecondTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+
+   .tab-third{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onThirdTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+
+   .tab-forth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onForthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-fifth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onFifthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-sixth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onSixthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-seventh{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onSeventhTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-eigth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onEigthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-ninth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onNinthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-tenth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onTenthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-eleventh{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onEleventhTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-twelth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onTwelthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-twelth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onTwelthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-twelth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onTwelthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+   .tab-twelth{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOffColor;
+    animation-name: onTwelthTab;
+    animation-duration: $Speed;
+    animation-fill-mode: $fillMode;
+    animation-delay: $delay;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing;
+   }
+    
+
+
+
+

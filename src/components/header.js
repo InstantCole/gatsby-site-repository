@@ -1,4 +1,4 @@
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -6,19 +6,6 @@ import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle }) => {
 
-  const data = useStaticQuery(graphql`
-  query{
-    allMarkdownRemark{
-      edges{
-        node{
-          fields{
-            slug
-          }
-        }
-      }
-    }
-  }
-  `)
 
   return (
   <header className={headerStyles.header}>
@@ -37,25 +24,14 @@ const Header = ({ siteTitle }) => {
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-2/">Page 2</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/teams/">Teams</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-3/">Page 3</Link>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-3/">Page 5</Link>
           </li>
           <li>
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/page-4/">Page 4</Link>
           </li>
-          {data.allMarkdownRemark.edges.map((edge) => {
-            return(
-              <li>
-                <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to= {`/teams/${edge.node.fields.slug}`}>{edge.node.fields.slug}</Link>
-
-              </li>
-            )
-          })}
-
-          
-            
         </ul>
         
       </nav>

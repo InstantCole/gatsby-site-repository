@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 export const query = graphql`
 query (
-    $slug: String!
+    $slug: String
 ){
  markdownRemark (
    fields: {
