@@ -6,6 +6,7 @@ import Tab from "../components/tab"
 
 const Page4 = () => {
   const [scale, setScale ] = useState(0);
+  const [startingFret, setFret ] = useState(0);
   //const [scale2, setScale2 ] = useState(1);
 
   const data = useStaticQuery(graphql`
@@ -48,7 +49,7 @@ return (
     <SEO title="Rocket League Teams Page" />
     <h1>Tabs</h1>
     
-    <Tab scale= {scale} setScale= {setScale} start={0} size={4}/>
+    <Tab scale= {scale} setScale= {setScale} startingFret={startingFret} setFret= {setFret}/>
     
     
     <Link to="/">Go back to the homepage</Link>

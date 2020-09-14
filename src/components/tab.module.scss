@@ -12,7 +12,8 @@ $timing: cubic-bezier(0.075, 0.82, 0.165, 1);
 $tabOnHeight: 16px;
 $tabOffheight: 8px;
 $eachTabHeight: 0px;
-$eachTabTopPadding: 30px;
+$eachTabTopPadding: 0px;
+$tabOnColor: chocolate;
 
 
 
@@ -30,7 +31,7 @@ $eachTabTopPadding: 30px;
     position: relative;
     display: inline-block;
     height: $eachTabHeight;
-    width: 20%;
+    width: 8%;
     padding-top: $eachTabTopPadding;
     margin: auto 8px;
     text-align: center;
@@ -40,7 +41,7 @@ $eachTabTopPadding: 30px;
     position: relative;
     display: inline-block;
     height: $eachTabHeight;
-    width: 20%;
+    width: 8%;
     opacity: 20%;
     padding-top: $eachTabTopPadding;
     margin: auto 8px;
@@ -334,6 +335,17 @@ $eachTabTopPadding: 30px;
     margin: $tabMargin;
     background-color:$tabOffColor;
    }
+
+.tab-play{
+    position: relative;
+    display: inline-block;
+    width: $tabWidth;
+    height: $tabOnHeight;
+    margin: $tabMargin;
+    opacity: $tabOpacity;
+    background-color:$tabOnColor;
+   }
+
 
 .tab-first{
     position: relative;
